@@ -825,15 +825,15 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 				  </div>
 				  
 				  <div class="elementor-element elementor-element-a482547 e-flex e-con-boxed e-con e-parent e-lazyloaded elementskit-parallax-multi-container" data-id="a482547" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0;">
-					<div class="elementor-element elementor-element-cf637e5 e-con-full e-flex e-con e-child elementskit-parallax-multi-container" data-id="cf637e5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="display: flex; flex-direction: column;  text-align: center; width: 500px; height: 500px; background-color: #ffffff; padding: 20px; border-radius: 8px;">
+					<div class="elementor-element elementor-element-cf637e5 e-con-full e-flex e-con e-child elementskit-parallax-multi-container" data-id="cf637e5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="display: flex; flex-direction: column; text-align: center; max-width: 100%; width: 500px; height: auto; background-color: #ffffff; padding: 20px; border-radius: 8px;">
 						<div class="elementor-element elementor-element-815cfe7 animated-fast elementor-widget elementor-widget-elementskit-heading animated fadeIn" data-id="815cfe7" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;ekit_we_effect_on&quot;:&quot;css&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="elementskit-heading.default">
 							<div class="elementor-widget-container">
 								<div class="ekit-wid-con">
-									<div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-">
-										<h6 class="elementskit-section-subtitle   ekit-heading__subtitle-has-border">
+									<div class="ekit-heading elementskit-section-title-wraper text_left ekit_heading_tablet- ekit_heading_mobile-">
+										<h6 class="elementskit-section-subtitle ekit-heading__subtitle-has-border">
 											Contato
 										</h6>
-										<h2 class="ekit-heading--title elementskit-section-title ">
+										<h2 class="ekit-heading--title elementskit-section-title">
 											<span><span>Entre em Contato</span></span>
 										</h2>
 										<div class="ekit-heading__description">
@@ -844,10 +844,10 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 							</div>
 						</div>
 						<div class="elementor-element elementor-element-6f8d115 animated-fast elementor-align-center elementor-widget elementor-widget-elementskit-button animated pulse" data-id="6f8d115" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;pulse&quot;,&quot;_animation_delay&quot;:300,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-button.default">
-							<div class="elementor-widget-container" >
+							<div class="elementor-widget-container">
 								<div class="ekit-wid-con">
-									<div class="ekit-btn-wraper" style="display: flex; justify-content: center; align-items: center;;">
-										<a href="https://wa.me/5535999662120?text=Ol%C3%A1,%20vi%20no%20site%20da%20GFE%20Consultoria%20Cont%C3%A1bil%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os." class="elementskit-btn whitespace--normal" id="" data-text="Fale com os especialistas" style="" >
+									<div class="ekit-btn-wraper" style="display: flex; justify-content: center; align-items: center;">
+										<a href="https://wa.me/5535999662120?text=Ol%C3%A1,%20vi%20no%20site%20da%20GFE%20Consultoria%20Cont%C3%A1bil%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os." class="elementskit-btn whitespace--normal" id="" data-text="Fale com os especialistas">
 											<i class="fab fa-whatsapp"></i><span class="button-wrapper">Fale com os especialistas</span>
 										</a>
 									</div>
@@ -856,6 +856,21 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 						</div>
 					</div>
 				</div>
+				
+				<style>
+					/* Ajustes para a centralização responsiva */
+					@media (max-width: 767px) {
+						.elementor-element-cf637e5 {
+							width: 90%; /* A largura será 90% da tela em dispositivos móveis */
+							padding: 15px; /* Ajusta o padding */
+						}
+				
+						/* Adiciona um pequeno ajuste de margem para centralizar corretamente */
+						.elementor-element-a482547 {
+							justify-content: flex-start; /* Alinha ao topo da tela, se necessário */
+						}
+					}
+				</style>
 				
 
 				</div>
@@ -941,7 +956,11 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 
  /* Aplica a largura apenas no celular (ou dispositivos menores que 1024px) */
 /* Aplica a largura apenas no computador (telas maiores que 1024px) */
-
+@media (min-width: 1025px) {
+    .elementor-21715 .elementor-element.elementor-element-6e972410 {
+        --width: 20 /* Ajuste a largura para desktop */
+    }
+}
 
 /* Para telas menores que 1024px (celular e tablet), o estilo fica normal */
 
